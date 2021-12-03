@@ -50,7 +50,6 @@ class Router
                 $method = $this->params['method'];
                 if (is_callable([$controller_object, $method])) {
                   echo call_user_func_array([$controller_object , $method] , $this->params);
-                  echo call_user_func_array("ali" , $this->params);
 
                 } else {
                     die("Method {$method} (in controller {$controller} ) not found");
